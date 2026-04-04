@@ -1,839 +1,820 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Siddartha - Personal Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+<head>
+    <meta charset="utf-8">
+    <title>Siddartha R Gundluru | Sr Full Stack .NET Developer</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta
+        content="Siddartha R Gundluru portfolio, Sr Full Stack .NET Developer, Azure, Angular, React, Semantic Kernel, Azure OpenAI"
+        name="keywords">
+    <meta
+        content="Portfolio of Siddartha R Gundluru, a Sr Full Stack .NET Developer specializing in enterprise applications, Azure cloud solutions, and AI-powered .NET systems."
+        name="description">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Edu+TAS+Beginner:wght@400..700&amp;family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/animate/animate.min.css">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
+<body>
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+    <div class="container-fluid nav-section border-0">
+        <nav class="navbar navbar-light">
+            <div class="navbar-nav flex-column">
+                <a href="#pigraHome" class="nav-item nav-link active"><span class="fa fa-home"></span> Home</a>
+                <a href="#pigraAbout" class="nav-item nav-link"><span class="far fa-address-card"></span> Summary</a>
+                <a href="#pigraExperience" class="nav-item nav-link"><span class="fa fa-briefcase"></span>
+                    Experience</a>
+                <a href="#pigraSkills" class="nav-item nav-link"><span class="fa fa-code"></span> Skills</a>
+                <a href="#pigraProjects" class="nav-item nav-link"><span class="fa fa-laptop-code"></span>
+                    Projects</a>
+                <a href="#pigraContact" class="nav-item nav-link"><span class="fas fa-address-book"></span> Contact</a>
             </div>
-        </div>
-        <!-- Spinner End -->
+        </nav>
+    </div>
 
-
-        <!-- Navbar Start -->
-        <div class="container-fluid nav-section border-0">
-            <nav class="navbar navbar-light">
-                <div class="navbar-nav flex-column">
-                    <a href="#pigraHome" class="nav-item nav-link active"><span class="fa fa-home"></span> Home</a>
-                    <a href="#pigraAbout" class="nav-item nav-link"><span class="far fa-address-card"></span> About</a>
-                    <a href="#pigraService" class="nav-item nav-link"><span class="fab fa-servicestack"></span> Service</a>
-                    <a href="#pigraBlog" class="nav-item nav-link"><span class="fa fa-blog"></span> Blog</a>
-                    <a href="#pigraContact" class="nav-item nav-link"><span class="fas fa-address-book"></span> Contact</a>
+    <div class="container-fluid" id="pigraHome">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-12 col-lg-3">
+                    <div class="header-content bg-dark h-100 pt-6 pe-6 pb-6">
+                        <a href="index.html" class="navbar-brand d-inline-flex pb-5 wow fadeInUp" data-wow-delay="0.1s">
+                            <h1 class="display-6 text-white mb-0">Siddartha</h1>
+                        </a>
+                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <p class="text-white sub-title">Hello, I'm Siddartha</p>
+                            <h1 class="display-6 text-white mb-0">Sr Full Stack .NET Developer building Azure and AI
+                                powered products.</h1>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-        </div>
-        <!-- Navbar End -->
-
-        <!-- Header Start -->
-        <div class="container-fluid" id="pigraHome">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-12 col-lg-3">
-                        <div class="header-content bg-dark h-100 pt-6 pe-6 pb-6">
-                            <a href="index.html" class="navbar-brand d-inline-flex pb-5 wow fadeInUp" data-wow-delay="0.1s">
-                                <h1 class="display-6 text-white mb-0">My Portfolio</h1>
-                            </a>
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.3s">
-                                <p class="text-white sub-title">👋 Hello I'm Siddartha</p>
-                                <h1 class="display-6 text-white mb-0">.NET Developer Based in USA</h1>
+                <div class="col-12 col-lg-9">
+                    <div class="header-img d-flex h-100 pt-6 ps-6 pb-6">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-5 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="bg-light p-4"
+                                    style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
+                                    <img src="img/post.JPG" class="img-fluid w-100"
+                                        style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;"
+                                        alt="Siddartha R Gundluru">
+                                </div>
+                            </div>
+                            <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
+                                <p class="header-badge">6+ Years | .NET | Azure | GenAI</p>
+                                <h1 class="display-6 mb-4">Siddartha R Gundluru</h1>
+                                <p class="mb-4">Full Stack .NET Developer with 6+ years of experience building
+                                    scalable enterprise applications and embedding AI and GenAI capabilities into
+                                    production systems. I specialize in .NET, ASP.NET Core, C#, Angular, React, Azure
+                                    AI Foundry, Semantic Kernel, RAG pipelines, and cloud-native architectures.</p>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-sm-6">
+                                        <div class="mini-card h-100">
+                                            <h5>Location</h5>
+                                            <p class="mb-0">Richardson, TX</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mini-card h-100">
+                                            <h5>Focus</h5>
+                                            <p class="mb-0">Enterprise web apps, APIs, AI personas, and Azure delivery
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-envelope text-primary me-3"></i>
+                                    <p class="text-dark mb-0"><a href="mailto:siddarthagreddy@gmail.com"
+                                            class="contact-link">siddarthagreddy@gmail.com</a></p>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fa fa-phone-alt text-primary me-3"></i>
+                                    <p class="text-dark mb-0"><a href="tel:+18139475651" class="contact-link">(813)
+                                            947-5651</a></p>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                    <p class="text-dark mb-0">Richardson, Texas</p>
+                                </div>
+                                <div class="d-flex flex-wrap header-actions mb-4">
+                                    <a class="btn btn-primary py-2 px-4 me-3 mb-2"
+                                        href="https://www.linkedin.com/in/siddarthagreddy/" target="_blank"
+                                        rel="noreferrer"><i class="fab fa-linkedin-in me-2"></i>LinkedIn</a>
+                                    <a class="btn btn-primary py-2 px-4 me-3 mb-2"
+                                        href="https://github.com/siddarthagreddy" target="_blank" rel="noreferrer"><i
+                                            class="fab fa-github me-2"></i>GitHub</a>
+                                    <a class="btn btn-primary py-2 px-4 mb-2"
+                                        href="https://drive.google.com/file/d/1Naj0g_7lLGWyxVaEFCAGhzymGGGFRILq/view?usp=sharing"
+                                        target="_blank" rel="noreferrer"><i class="fas fa-download me-2"></i>Download
+                                        Resume</a>
+                                </div>
+                                <div class="d-flex">
+                                    <a class="btn btn-primary btn-sm-square me-3"
+                                        href="https://www.linkedin.com/in/siddarthagreddy/" target="_blank"
+                                        rel="noreferrer"><i class="fab fa-linkedin-in text-white"></i></a>
+                                    <a class="btn btn-primary btn-sm-square me-3"
+                                        href="https://github.com/siddarthagreddy" target="_blank" rel="noreferrer"><i
+                                            class="fab fa-github text-white"></i></a>
+                                    <a class="btn btn-primary btn-sm-square" href="mailto:siddarthagreddy@gmail.com"><i
+                                            class="fas fa-envelope text-white"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-9">
-                        <div class="header-img d-flex h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-5">
-                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="bg-light p-4" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
-                                        <img src="img/post.JPG" class="img-fluid w-100" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;" alt="Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="pigraAbout">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-3">
+                    <div class="about-header bg-dark h-100 pt-6 pe-6 pb-6">
+                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp"
+                            data-wow-delay="0.1s">
+                            <p class="text-white sub-title">Summary</p>
+                            <h1 class="display-6 text-white mb-0">Professional profile</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="about-content h-100 pt-6 ps-6 pb-6">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.1s">
+                                <p class="mb-4">I design and ship business-critical solutions that connect modern web
+                                    experiences with secure backend systems, cloud infrastructure, and practical AI
+                                    workflows. My recent work includes AI personas, retrieval-augmented generation,
+                                    LLM orchestration through Semantic Kernel, microservices, and full-stack delivery
+                                    with Angular and React.</p>
+                                <ul class="resume-list">
+                                    <li>Strong backend expertise in .NET Core, .NET 8+, ASP.NET MVC, Web API, and
+                                        Entity Framework Core.</li>
+                                    <li>Frontend delivery experience with Angular, React, NgRx, RxJS, Angular
+                                        Material, Bootstrap, TypeScript, HTML, and CSS.</li>
+                                    <li>Hands-on Azure background across Functions, App Services, Service Bus, Event
+                                        Hub, Key Vault, Cosmos DB, AI Search, Application Insights, and AI Foundry.
+                                    </li>
+                                    <li>Production AI implementation with Azure OpenAI, Semantic Kernel, LangChain,
+                                        prompt engineering, vector embeddings, and RAG pipelines.</li>
+                                    <li>Experienced in Agile delivery, secure coding, CI/CD pipelines, Fortify,
+                                        CodeQL, and production support.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-5 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="about-img">
+                                    <img src="img/about.jpg" class="img-fluid w-100 rounded" alt="Professional summary">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-4">
+                                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                                        <div class="mini-card h-100">
+                                            <h5>AI and GenAI</h5>
+                                            <p class="mb-0">AI personas, Azure OpenAI, Semantic Kernel, prompt
+                                                orchestration, and enterprise RAG solutions.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="mini-card h-100">
+                                            <h5>Cloud Delivery</h5>
+                                            <p class="mb-0">Azure-native deployments, monitoring, event-driven systems,
+                                                and reliable CI/CD workflows.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+                                        <div class="mini-card h-100">
+                                            <h5>Enterprise Impact</h5>
+                                            <p class="mb-0">Performance tuning, security remediation, scalable APIs,
+                                                and maintainable full-stack architecture.</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
-                                    <h1 class="display-6 mb-4">My Summary</h1>
-                                    <p class="mb-4">Hello, I am Siddartha Reddy Gundluru</h4>
-                                        <p class="mb-4">Full Stack .NET Developer with 6+ years of experience building, modernizing, and deploying scalable web applications across the full software development lifecycle. Strong expertise in .NET Core, ASP.NET, C#, RESTful APIs, and microservices, with solid front-end experience using Angular, React, JavaScript, and jQuery. Skilled in SQL Server optimization, cloud-native development on Azure, and implementing CI/CD pipelines for reliable deployments. Experienced in integrating AI capabilities using OpenAI and Azure Cognitive Services. A collaborative engineer with a strong foundation in Agile/Scrum practices, focused on delivering secure, high-performing, and user-friendly applications.
-                                    </p>
-                                    <!-- <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">14220 Monterey Pines Dr, Tampa, USA</p>
-                                    </div> -->
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-envelope text-primary me-3"></i>
-                                        <p class="text-dark mb-0">siddarthagreddy@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="pigraExperience">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-3">
+                    <div class="experience-header bg-dark h-100 pt-6 pe-6 pb-6">
+                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp"
+                            data-wow-delay="0.1s">
+                            <p class="text-white sub-title">Experience</p>
+                            <h1 class="display-6 text-white mb-0">Work history</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="experience-content h-100 pt-6 ps-6 pb-6">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="d-flex flex-wrap align-items-center mb-3">
+                                        <p class="fs-5 mb-0 me-4">Orion Innovation | Client: KPMG</p>
+                                        <div><span class="fa fa-calendar me-1"></span>Mar 2025 - Present</div>
                                     </div>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fa fa-phone-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">(813) 947 5651</p>
+                                    <h4 class="mb-3">Sr Full Stack .NET Developer</h4>
+                                    <ul class="resume-list">
+                                        <li>Building enterprise web applications with .NET Core, Angular, and Azure
+                                            across backend services and UI workflows.</li>
+                                        <li>Designing AI personas with Azure AI Foundry and Semantic Kernel for
+                                            context-aware conversational experiences.</li>
+                                        <li>Implementing RAG-based features with Azure AI Search and Azure OpenAI for
+                                            document retrieval and summarization.</li>
+                                        <li>Integrating LLM capabilities into .NET services using Semantic Kernel for
+                                            orchestration, function calling, and prompt management.</li>
+                                        <li>Resolving Fortify security issues including SQL injection, XSS, and
+                                            insecure deserialization.</li>
+                                        <li>Supporting Azure App Services, Application Insights, Azure DevOps CI/CD,
+                                            and production troubleshooting.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="d-flex flex-wrap align-items-center mb-3">
+                                        <p class="fs-5 mb-0 me-4">Teck Fortune Inc | Client: EMCOR</p>
+                                        <div><span class="fa fa-calendar me-1"></span>Oct 2024 - Mar 2025</div>
+                                    </div>
+                                    <h4 class="mb-3">Sr .NET Developer</h4>
+                                    <ul class="resume-list">
+                                        <li>Designed enterprise applications, REST APIs, and microservices using .NET
+                                            Core, .NET Framework, and Entity Framework.</li>
+                                        <li>Migrated a legacy MVC application to .NET Core, improving scalability and
+                                            performance by 25%.</li>
+                                        <li>Built Angular SPA modules with RxJS, reactive forms, and routing for
+                                            modular front-end architecture.</li>
+                                        <li>Implemented OAuth, JWT, role-based authorization, Serilog audit logging,
+                                            Fortify, and CodeQL-driven remediation.</li>
+                                        <li>Optimized SQL reporting workloads, Azure Service Bus integrations, Redis
+                                            caching, and Azure Blob/Table storage.</li>
+                                        <li>Automated Azure DevOps and GitHub Actions pipelines, reducing deployment
+                                            effort by 60%.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="d-flex flex-wrap align-items-center mb-3">
+                                        <p class="fs-5 mb-0 me-4">Ecolab Inc</p>
+                                        <div><span class="fa fa-calendar me-1"></span>Sep 2021 - Dec 2022</div>
+                                    </div>
+                                    <h4 class="mb-3">Software Engineer</h4>
+                                    <ul class="resume-list">
+                                        <li>Developed high-throughput .NET Core APIs processing 10M+ IoT transactions
+                                            per month.</li>
+                                        <li>Built cloud-native microservices with Azure Functions, Service Bus, and
+                                            event-driven patterns.</li>
+                                        <li>Designed data solutions with Azure Cosmos DB, SQL Server, KustoDB, Redis,
+                                            and Parquet transformation pipelines.</li>
+                                        <li>Created KQL queries and dashboards in Azure Data Explorer, Application
+                                            Insights, and Log Analytics.</li>
+                                        <li>Integrated Salesforce Lightning Web Components with secured backend .NET
+                                            APIs.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="d-flex flex-wrap align-items-center mb-3">
+                                        <p class="fs-5 mb-0 me-4">Karomi Technologies</p>
+                                        <div><span class="fa fa-calendar me-1"></span>Jan 2019 - Sep 2021</div>
+                                    </div>
+                                    <h4 class="mb-3">Software Developer</h4>
+                                    <ul class="resume-list">
+                                        <li>Developed ASP.NET MVC enterprise applications with reusable workflow
+                                            automation components.</li>
+                                        <li>Built and consumed Web APIs and WCF services for process automation and
+                                            configurable UI patterns.</li>
+                                        <li>Created Angular and TypeScript interfaces with reactive forms, custom
+                                            validators, lazy loading, Bootstrap, and jQuery.</li>
+                                        <li>Optimized SQL Server procedures, functions, and reporting with SSRS while
+                                            supporting production systems with 99.9% uptime.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="pigraSkills">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-3">
+                    <div class="skills-header h-100 bg-dark pt-6 pe-6 pb-6">
+                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp"
+                            data-wow-delay="0.1s">
+                            <p class="text-white sub-title">Skills</p>
+                            <h1 class="display-6 text-white mb-0">Technical toolkit</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="skills-content h-100 pt-6 ps-6 pb-6">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp"
+                                    data-wow-delay="0.1s">
+                                    <div class="text-primary text-center mb-3"><span
+                                            class="fas fa-server fa-3x"></span></div>
+                                    <h4 class="mb-3">Backend</h4>
+                                    <p class="skill-copy mb-0">C#, .NET Core, .NET 8+, ASP.NET MVC, Web API, Entity
+                                        Framework Core, AutoMapper</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp"
+                                    data-wow-delay="0.2s">
+                                    <div class="text-primary text-center mb-3"><span
+                                            class="fas fa-window-maximize fa-3x"></span></div>
+                                    <h4 class="mb-3">Frontend</h4>
+                                    <p class="skill-copy mb-0">Angular, React, NgRx, RxJS, TypeScript, JavaScript,
+                                        HTML, CSS, Angular Material, Bootstrap</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp"
+                                    data-wow-delay="0.3s">
+                                    <div class="text-primary text-center mb-3"><span
+                                            class="fas fa-database fa-3x"></span></div>
+                                    <h4 class="mb-3">Data</h4>
+                                    <p class="skill-copy mb-0">SQL Server, stored procedures, views, functions, Azure
+                                        Cosmos DB, MongoDB, Redis, KustoDB</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp"
+                                    data-wow-delay="0.4s">
+                                    <div class="text-primary text-center mb-3"><span
+                                            class="fas fa-cloud fa-3x"></span></div>
+                                    <h4 class="mb-3">Azure</h4>
+                                    <p class="skill-copy mb-0">Functions, App Services, Service Bus, Event Hub, Key
+                                        Vault, AI Foundry, AI Search, Application Insights</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp"
+                                    data-wow-delay="0.5s">
+                                    <div class="text-primary text-center mb-3"><span
+                                            class="fas fa-robot fa-3x"></span></div>
+                                    <h4 class="mb-3">AI and GenAI</h4>
+                                    <p class="skill-copy mb-0">Azure OpenAI, Semantic Kernel, LangChain, RAG, AI
+                                        personas, prompt engineering, vector embeddings</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp"
+                                    data-wow-delay="0.6s">
+                                    <div class="text-primary text-center mb-3"><span
+                                            class="fas fa-cogs fa-3x"></span></div>
+                                    <h4 class="mb-3">DevOps</h4>
+                                    <p class="skill-copy mb-0">Azure DevOps, GitHub Actions, CI/CD pipelines, Docker,
+                                        Kubernetes, RabbitMQ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp"
+                                    data-wow-delay="0.7s">
+                                    <div class="text-primary text-center mb-3"><span
+                                            class="fas fa-shield-alt fa-3x"></span></div>
+                                    <h4 class="mb-3">Testing</h4>
+                                    <p class="skill-copy mb-0">xUnit, NUnit, Moq, Postman, Swagger, secure coding,
+                                        Fortify, CodeQL</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp"
+                                    data-wow-delay="0.8s">
+                                    <div class="text-primary text-center mb-3"><span
+                                            class="fas fa-chart-line fa-3x"></span></div>
+                                    <h4 class="mb-3">Reporting</h4>
+                                    <p class="skill-copy mb-0">Power BI, SSRS, Chart.js, analytics dashboards, KQL,
+                                        operational reporting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-3">
+                    <div class="service-header h-100 bg-dark pt-6 pe-6 pb-6">
+                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp"
+                            data-wow-delay="0.1s">
+                            <p class="text-white sub-title">Highlights</p>
+                            <h1 class="display-6 text-white mb-0">What I bring</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="service-content h-100 pt-6 ps-6 pb-6">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-xl-2">
+                                            <i class="fas fa-brain fa-3x"></i>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <p class="h4 mb-0">AI Product Delivery</p>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <p class="mb-0">Designing AI personas, RAG workflows, and LLM integrations
+                                                that fit real enterprise processes.</p>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <p><i class="fa fa-check me-2"></i>Semantic Kernel</p>
+                                            <p><i class="fa fa-check me-2"></i>Azure OpenAI</p>
+                                            <p class="mb-0"><i class="fa fa-check me-2"></i>AI Search</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-xl-2">
+                                            <i class="fas fa-bezier-curve fa-3x"></i>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <p class="h4 mb-0">API and Microservices</p>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <p class="mb-0">Building secure REST APIs and event-driven systems with
+                                                clean architecture and scalable integrations.</p>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <p><i class="fa fa-check me-2"></i>.NET Core</p>
+                                            <p><i class="fa fa-check me-2"></i>Entity Framework</p>
+                                            <p class="mb-0"><i class="fa fa-check me-2"></i>Service Bus</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-xl-2">
+                                            <i class="fas fa-laptop-code fa-3x"></i>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <p class="h4 mb-0">Modern Frontend</p>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <p class="mb-0">Creating responsive Angular and React experiences with solid
+                                                state management and maintainable component design.</p>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <p><i class="fa fa-check me-2"></i>Angular</p>
+                                            <p><i class="fa fa-check me-2"></i>React</p>
+                                            <p class="mb-0"><i class="fa fa-check me-2"></i>NgRx and RxJS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-xl-2">
+                                            <i class="fas fa-cloud fa-3x"></i>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <p class="h4 mb-0">Azure Operations</p>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <p class="mb-0">Shipping production workloads with observability, secure
+                                                deployments, and dependable CI/CD pipelines.</p>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <p><i class="fa fa-check me-2"></i>App Services</p>
+                                            <p><i class="fa fa-check me-2"></i>Key Vault</p>
+                                            <p class="mb-0"><i class="fa fa-check me-2"></i>Azure DevOps</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="education-item rounded p-4 h-100 wow fadeInUp"
+                                            data-wow-delay="0.5s">
+                                            <p class="text-primary fw-bold mb-2">Education</p>
+                                            <h4 class="mb-2">University of South Florida</h4>
+                                            <p class="mb-1">Master's in Business Analytics and Information Systems</p>
+                                            <p class="mb-0 text-body">Aug 2023 - Aug 2024</p>
+                                            <hr>
+                                            <h4 class="mb-2">Jawaharlal Nehru Technological University, Hyderabad</h4>
+                                            <p class="mb-1">Bachelor of Technology in Computer Science</p>
+                                            <p class="mb-0 text-body">Jun 2015 - May 2019</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="education-item rounded p-4 h-100 wow fadeInUp"
+                                            data-wow-delay="0.6s">
+                                            <p class="text-primary fw-bold mb-2">Certifications</p>
+                                            <ul class="resume-list mb-0">
+                                                <li>Microsoft Azure Fundamentals</li>
+                                                <li>Microsoft Azure Developer Associate</li>
+                                                <li>Rice University Python Programming Essentials</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="pigraProjects">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-3">
+                    <div class="portfolio-header h-100 bg-dark pt-6 pe-6 pb-6">
+                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp"
+                            data-wow-delay="0.1s">
+                            <p class="text-white sub-title">Projects</p>
+                            <h1 class="display-6 text-white mb-0">Selected work</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
+                        <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-xl-6">
+                                    <h4 class="text-body">Full Stack Web App</h4>
+                                    <h1 class="display-6 mb-3">Social Media Platform</h1>
+                                    <p class="project-copy mb-0">ASP.NET Core Web API and React with TypeScript,
+                                        Clean Architecture, CQRS, JWT authentication, SignalR chat, form validation,
+                                        profile management, and Azure deployment.</p>
+                                </div>
+                                <div class="col-9 col-xl-4">
+                                    <div class="portfolio-img">
+                                        <div class="portfolio-img-inner">
+                                            <img src="img/Portfolio-1.jpg" class="img-fluid"
+                                                alt="Social media platform project">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-xl-2">
+                                    <div class="view-img">
+                                        <a href="https://github.com/siddarthagreddy/ReactivitiesApp"
+                                            class="btn btn-primary btn-lg-square" target="_blank" rel="noreferrer"><i
+                                                class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-xl-6">
+                                    <h4 class="text-body">Enterprise Web App</h4>
+                                    <h1 class="display-6 mb-3">National Park Conservation App</h1>
+                                    <p class="project-copy mb-0">Led a team of four to build a .NET Core MVC and Web
+                                        API application for park and species conservation data with EF Core, SQL
+                                        Server, MongoDB, and a responsive Bootstrap UI.</p>
+                                </div>
+                                <div class="col-9 col-xl-4">
+                                    <div class="portfolio-img">
+                                        <div class="portfolio-img-inner">
+                                            <img src="img/header-img.jpg" class="img-fluid"
+                                                alt="National park conservation app">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-xl-2">
+                                    <div class="view-img">
+                                        <a href="https://github.com/siddarthagreddy" class="btn btn-primary btn-lg-square"
+                                            target="_blank" rel="noreferrer"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-xl-6">
+                                    <h4 class="text-body">Microservices Architecture</h4>
+                                    <h1 class="display-6 mb-3">E-Commerce Microservices</h1>
+                                    <p class="project-copy mb-0">Designed product, cart, order, payment, coupon, email,
+                                        and identity services using .NET Core, SQL Server, Azure Service Bus, and
+                                        Ocelot API Gateway with an MVC frontend.</p>
+                                </div>
+                                <div class="col-9 col-xl-4">
+                                    <div class="portfolio-img">
+                                        <div class="portfolio-img-inner">
+                                            <img src="img/Food.avif" class="img-fluid"
+                                                alt="E-commerce microservices architecture">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-xl-2">
+                                    <div class="view-img">
+                                        <a href="https://github.com/siddarthagreddy" class="btn btn-primary btn-lg-square"
+                                            target="_blank" rel="noreferrer"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item py-5 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-xl-6">
+                                    <h4 class="text-body">Machine Learning</h4>
+                                    <h1 class="display-6 mb-3">Crime Category Prediction in NYC</h1>
+                                    <p class="project-copy mb-0">Built a Python-based ML project using Decision Trees,
+                                        Random Forests, and Gradient Boosting with preprocessing, feature engineering,
+                                        and tuning for better predictive performance.</p>
+                                </div>
+                                <div class="col-9 col-xl-4">
+                                    <div class="portfolio-img">
+                                        <div class="portfolio-img-inner">
+                                            <img src="img/portfolio-3.jpg" class="img-fluid"
+                                                alt="Crime category prediction project">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-xl-2">
+                                    <div class="view-img">
+                                        <a href="https://github.com/siddarthagreddy/Crime-Category-Prediction-in-NYC"
+                                            class="btn btn-primary btn-lg-square" target="_blank" rel="noreferrer"><i
+                                                class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="pigraContact">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-3">
+                    <div class="contact-header h-100 bg-dark pt-6 pe-6 pb-6">
+                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp"
+                            data-wow-delay="0.1s">
+                            <p class="text-white sub-title">Contact</p>
+                            <h1 class="display-6 text-white mb-0">Let's connect</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="contact-content h-100 pt-6 ps-6 pb-6">
+                        <div class="bg-light p-4">
+                            <div class="row g-5">
+                                <div class="col-xl-5 wow fadeInUp" data-wow-delay="0.1s">
+                                    <p class="mb-4">I am open to senior full stack .NET roles, Azure-focused platform
+                                        work, and AI-enabled enterprise application development.</p>
+                                    <div class="d-flex mb-4">
+                                        <div class="btn-xl-square bg-primary text-white me-3">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div>
+                                            <h4>Email</h4>
+                                            <p class="mb-0"><a href="mailto:siddarthagreddy@gmail.com"
+                                                    class="contact-link">siddarthagreddy@gmail.com</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-4">
+                                        <div class="btn-xl-square bg-primary text-white me-3">
+                                            <i class="fa fa-phone-alt"></i>
+                                        </div>
+                                        <div>
+                                            <h4>Phone</h4>
+                                            <p class="mb-0"><a href="tel:+18139475651" class="contact-link">(813)
+                                                    947-5651</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-4">
+                                        <div class="btn-xl-square bg-primary text-white me-3">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div>
+                                            <h4>Location</h4>
+                                            <p class="mb-0">Richardson, TX</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-4">
+                                        <div class="btn-xl-square bg-primary text-white me-3">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </div>
+                                        <div>
+                                            <h4>LinkedIn</h4>
+                                            <p class="mb-0"><a href="https://www.linkedin.com/in/siddarthagreddy/"
+                                                    target="_blank" rel="noreferrer"
+                                                    class="contact-link">linkedin.com/in/siddarthagreddy</a></p>
+                                        </div>
                                     </div>
                                     <div class="d-flex">
-                                        <a class="btn btn-primary btn-sm-square me-3" href="https://www.facebook.com/siddarthagreddy/" target="_blank"><i class="fab fa-facebook-f text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-3" href="https://www.instagram.com/siddartha_redy/" target="_blank"><i class="fab fa-instagram text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-3" href="https://www.linkedin.com/in/siddarthagreddy/" target="_blank"><i class="fab fa-linkedin-in text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-3" href="https://github.com/siddarthagreddy" target="_blank"><i class="fab fa-github text-white"></i></a>
-                                    </div>
-                                    
-                                </div>
-                                    <a href="https://drive.google.com/file/d/1ntKfaZIOlveWNVkl8mwiURKXicO5f8wM/view?usp=sharing"  target="_blank" class="btn btn-primary py-2 px-4"> <i class="fas fa-download me-2"></i>Download My CV</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Header End -->
-        <!-- Education Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="education-header bg-dark h-100 pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Education</p>
-                                <h1 class="display-6 text-white mb-0">My Education Qualification</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="education-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Jawaharlal Technological University</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> 2015 - 2019
-                                            </div>
+                                        <div class="btn-xl-square bg-primary text-white me-3">
+                                            <i class="fab fa-github"></i>
                                         </div>
-                                        <h4 class="mb-3">Bachelor's in Computer Science</h4>
-                                        <!-- <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, a quasi velit sint atque non saepe quaerat ducimus, nobis error cupiditate, nisi repudiandae dignissimos magnam? Dicta ab possimus tempora nobis.
-                                        </p> -->
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">University Of South Florida </p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> 2023 - 2024
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Master's in Business Analytics and Information Systems.</h4>
-                                        <!-- <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, a quasi velit sint atque non saepe quaerat ducimus, nobis error cupiditate, nisi repudiandae dignissimos magnam? Dicta ab possimus tempora nobis.
-                                        </p> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Education End -->
-
-        <!-- Experience Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="experience-header bg-dark h-100 pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Experience</p>
-                                <h1 class="display-6 text-white mb-0">My work experience</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="experience-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Orion Innovation (Client – KPMG)</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> Mar 2025 - Present
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Sr Full Stack .NET Developer</h4>
-                                        <p class="mb-0">
-	                                        •	Working on a large enterprise web application using .NET Core, Angular, and Azure, contributing across backend services and UI features.<br>
-	                                        •	Designing and maintaining .NET Core REST APIs for internal modules and third-party integrations, following clean and maintainable architecture.<br>
-	                                        •	Building user-facing features using Angular, NgRx, and RxJS, handling state management and API integrations.<br>
-	                                        •	Developing and tuning Azure SQL queries and stored procedures, working closely with the data layer to support application workflows.<br>
-	                                        •	Deploying and supporting .NET Core services and Angular SPAs on Azure App Services, including configuration and troubleshooting.<br>
-	                                        •	Using Azure Application Insights and log streaming to monitor application health and investigate production issues.<br>
-	                                        •	Supporting CI/CD pipelines using Azure DevOps, assisting with builds, deployments, and release validation.<br>
-	                                        •	Contributing to GenAI features, including RAG-based approaches and integrations using OpenAI APIs and Azure AI Foundry.<br>
-	                                        •	Collaborating with cross-functional teams in an Agile/Scrum environment to deliver stable, production-ready features.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.2s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">EMCOR Services Inc (Contract)</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> Feb 2023 - Mar 2025
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Sr. .NET Developer</h4>
-                                        <p class="mb-0">
-	                                        •	Designed and developed enterprise applications, RESTful APIs, and microservices using .NET Core, .NET Framework, and Entity Framework.<br>
-	                                        •	Migrated a legacy .NET Framework MVC application to .NET Core, improving scalability and performance by 25%.<br>
-	                                        •	Built Single Page Applications (SPA) using Angular, implementing RxJS, Reactive Forms, and Angular Router for modular front-end architecture.<br>
-	                                        •	Developed dynamic UI components, charts, and grids using Angular Material, Bootstrap, and Chart.js.<br>
-	                                        •	Implemented OAuth/JWT authentication, API Gateway, and role-based authorization for secure access management.<br>
-	                                        •	Designed and optimized SQL queries, stored procedures, and views for reporting and data processing.<br>
-	                                        •	Built event-driven solutions with Kafka and Azure Service Bus for real-time data streaming.<br>
-	                                        •	Implemented caching strategies with Redis, Azure Blob/Table Storage, improving response times by 40%.<br>
-	                                        •	Automated CI/CD pipelines using Azure DevOps and GitHub Actions, reducing deployment effort by 40%.<br>
-	                                        •	Developed reports and dashboards with SSRS and Power BI to provide real-time business insights.<br>
-	                                        •	Handled deployments to IIS and Azure App Services, provided on-call support for production releases.<br>
-	                                        •	Actively participated in Agile practices — sprint planning, daily stand-ups, and peer code reviews — ensuring timely delivery.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Ecolab Inc</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> Sep 2021 - Dec 2022
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Software Engineer</h4>
-                                        <p class="mb-0">
-                                            •	Developed high-throughput .NET Core Web APIs, processing over 10M+ IoT transactions monthly.<br>
-                                            •	Built scalable microservices and cloud-native solutions using Azure Functions, Service Bus, and RabbitMQ.<br>
-                                            •	Optimized database calls with Azure Redis Cache, reducing system load times by 35%.<br>
-                                            •	Designed schemas in Azure Cosmos DB, SQL Server, and KustoDB for large-scale IoT data ingestion.<br>
-                                            •	Developed complex KQL queries for real-time analytics in Azure Data Explorer.<br>
-                                            •	Built Function App pipelines to transform large datasets into optimized Parquet files.<br>
-                                            •	Integrated Salesforce Lightning Web Components (LWC) with backend .NET APIs.<br>
-                                            •	Secured APIs using OAuth, JWT, and RBAC, adhering to security best practices.<br>
-                                            •	Automated deployments via Azure DevOps CI/CD pipelines, ensuring reliable delivery.<br>
-                                            •	Implemented logging and monitoring with Azure Application Insights for proactive issue detection.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Karomi Technologies</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> Jan 2019 - Sep 2021
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">Software Developer</h4>
-                                        <p class="mb-0">
-                                            •	Developed enterprise applications using ASP.NET MVC, creating reusable components for workflow automation.<br>
-                                            •	Built and consumed Web APIs / WCF Services, integrating with MVC applications for process automation.<br>
-                                            •	Created dynamic front-end interfaces using Angular, TypeScript, Bootstrap, and jQuery.<br>
-                                            •	Implemented Angular Reactive Forms, custom validators, and lazy loading modules to improve UX and performance.<br>
-                                            •	Developed custom workflow designers and reusable components for configurable UI patterns.<br>
-                                            •	Optimized database performance with SQL Server, writing stored procedures, functions, and complex queries.<br>
-                                            •	Designed and optimized SSRS reports, improving reporting and analytics capabilities.<br>
-                                            •	Provided production support, troubleshooting issues to ensure 99.9% uptime.<br>
-                                            •	Maintained code quality and branching strategies with Git and TFS.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Exparience End -->
-
-
-        <!-- Skills Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="skills-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Skills</p>
-                                <h1 class="display-6 text-white mb-0">My expertise skills</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="skills-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="text-primary text-center mb-3"><span class="far fa-file-code fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">87</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">.Net Development</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="text-primary text-center mb-3"><span class="fas fa-database fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">85</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">SQL</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="text-primary text-center mb-3"><span class="fas fa-cloud fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">87</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Azure Cloud</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.7s">
-                                        <div class="text-primary text-center mb-3"><span class="fab fa-elementor fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">75</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">Reporting</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="text-primary text-center mb-3"><span class="fab fa-js-square fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">67</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">JavaScript</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                    <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="text-primary text-center mb-3"><span class="fab fa-html5 fa-3x"></span></div>
-                                        <div class="counter-counting d-flex justify-content-center">
-                                            <h4 class="display-6" data-toggle="counter-up">87</h4>
-                                            <h4 class="display-6">%</h4>
-                                        </div>
-                                        <p class="mb-0">HTML & CSS</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Skills End -->
-
-
-        <!-- Service Start -->
-        <div class="container-fluid" id="pigraService">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="service-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">My Services</p>
-                                <h1 class="display-6 text-white mb-0">What I do for you</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="service-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-xl-2">
-                                                <i class="fas fa-bezier-curve fa-3x"></i>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <a href="#" class="h4 mb-0">API Development</a>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <p class="mb-0">Developing Restful API's in .Net Core, following best design patterns.
-                                                </p>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <p><i class="fa fa-check me-2"></i> .NET Core</p>
-                                                <p><i class="fa fa-check me-2"></i> Security</p>
-                                                <p><i class="fa fa-check me-2"></i> Microservices</p>
-                                                <p class="mb-0"><i class="fa fa-check me-2"></i> REST API</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-xl-2">
-                                                <i class="fas fa-laptop-code fa-3x"></i>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <a href="#" class="h4 mb-0">Web Development</a>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <p class="mb-0">Develop App's using frond end Libraries and MVC with clean and Responsive UI.
-                                                </p>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <p><i class="fa fa-check me-2"></i> UI Design</p>
-                                                <p><i class="fa fa-check me-2"></i> MVC</p>
-                                                <p class="mb-0"><i class="fa fa-check me-2"></i> Responsive UI</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-xl-2">
-                                                <i class="fas fa-solid fa-cloud fa-3x"></i>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <a href="#" class="h4 mb-0">Cloud</a>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <p class="mb-0">Maintained Application's on Azure Cloud, consuming most of the services like App Services, Storage Accounts, Service Bus, Databases etc.
-                                                </p>
-                                            </div>
-                                            <div class="col-xl-3">
-                                                <p><i class="fa fa-check me-2"></i> App Service</p>
-                                                <p><i class="fa fa-check me-2"></i> Cosmos</p>
-                                                <p><i class="fa fa-check me-2"></i> Service Bus</p>
-                                                <p class="mb-0"><i class="fa fa-check me-2"></i> Storage Accounts</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
-
-
-        <!-- Portfolio Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="portfolio-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Portfolio</p>
-                                <h1 class="display-6 text-white mb-0">My Recent Works</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Web Development</h4>
-                                        <h1 class="display-6 mb-0">Social Media Application</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/Portfolio-1.jpg" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-xl-2">
-                                        <div class="view-img">
-                                            <a href="https://github.com/siddarthagreddy/ReactivitiesApp" class="btn btn-primary btn-lg-square"  target="_blank"><i class="fas fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Data Visualization</h4>
-                                        <h1 class="display-6 mb-0">Americas Shift towards Renewable Energy Resources Analysis</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/portfolio-2.jpg" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-xl-2">
-                                        <div class="view-img">
-                                            <a href="https://github.com/siddarthagreddy/DataVisualization" class="btn btn-primary btn-lg-square" target="_blank"><i class="fas fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><div class="portfolio-item py-5 wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Web Development</h4>
-                                        <h1 class="display-6 mb-0">Food delivery App</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/Food.avif" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-xl-2">
-                                        <div class="view-img">
-                                            <a href="https://github.com/siddarthagreddy/OnlineFoodDeliveryApp" class="btn btn-primary btn-lg-square" target="_blank"><i class="fas fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-item py-5 wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-xl-6">
-                                        <h4 class="text-body">Data Mining</h4>
-                                        <h1 class="display-6 mb-0">Crime Category Prediction in NYC (ML Algorithms, Python)</h1>
-                                    </div>
-                                    <div class="col-9 col-xl-4">
-                                        <div class="portfolio-img">
-                                            <div class="portfolio-img-inner">
-                                                <img src="img/portfolio-3.jpg" class="img-fluid" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-xl-2">
-                                        <div class="view-img">
-                                            <a href="https://github.com/siddarthagreddy/Crime-Category-Prediction-in-NYC" class="btn btn-primary btn-lg-square" target="_blank"><i class="fas fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio End -->
-
-
-       <!-- Blog Start -->
-       <!-- <div class="container-fluid" id="pigraBlog">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="blog-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Blog</p>
-                                <h1 class="display-6 text-white mb-0">Recent Posts</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="blog-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-1.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 12, 2024</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">Secrets of the Mobile Application</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Bernard</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Design</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-2.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 18, 2024</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">How to Create Quality Figma Design</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Walker</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Media</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-3.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 23, 2025</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">Tutorials for Learning Development</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Jacob</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Lifestyle</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="blog-item wow fadeInUp" data-wow-delay="0.7s">
-                                        <div class="row g-4">
-                                            <div class="col-4">
-                                                <div class="blog-item-img bg-dark h-100">
-                                                    <a href="#">
-                                                        <img src="img/blog-4.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="h-100">
-                                                    <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 26, 2025</p>
-                                                    <a href="#" class="d-inline-block h4 mb-4">Tutorials for Learning Development</a>
-                                                    <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                        <p class="mb-0 text-body">By <a href="#" class="h6">Perkel</a></p>
-                                                        <p class="mb-0 text-body">In <a href="#" class="h6">Design</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeInUp" data-wow-delay="0.9s">
-                                    <div class="blog-btn d-flex justify-content-center">
-                                        <p class="mb-0 me-2">For More Works Visit</p>
-                                        <a href="#" class="btn d-inline-block p-0">Our Blog</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Blog End -->
-
-
-        <!-- Contact Start -->
-        <div class="container-fluid" id="pigraContact">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="contact-header h-100 bg-dark pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Contact Me</p>
-                                <!-- <h1 class="display-6 text-white mb-0">Let’s Start A New Project</h1> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                       <div class="contact-content h-100 pt-6 ps-6 pb-6">
-                            <div class="bg-light p-4">
-                                <div class="row g-5">
-                                    <div class="col-xl-5 wow fadeInUp" data-wow-delay="0.1s">
-                                        <p class="mb-4">Reach me out to my Email or Phone</p>
-                                        <!-- <div class="d-flex mb-4">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fas fa-map-marker-alt"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Address</h4>
-                                                <p class="mb-0">14220 Monterey Pines Dr,FL,Tampa,USA</p>
-                                            </div>
-                                        </div> -->
-                                        <div class="d-flex mb-4">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fas fa-envelope"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Email Me</h4>
-                                                <p class="mb-0">siddarthagreddy@gmail.com</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white me-3">
-                                                <i class="fa fa-phone-alt"></i>
-                                            </div>
-                                            <div>
-                                                <h4>Telephone</h4>
-                                                <p class="mb-0">(813) 947 5651</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
                                         <div>
-                                            <form>
-                                                <div class="row g-3">
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
-                                                            <label for="name">Your Name</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
-                                                            <label for="email">Your Email</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="phone" class="form-control border-0" id="phone" placeholder="Phone">
-                                                            <label for="phone">Your Phone</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="form-floating">
-                                                            <input type="text" class="form-control border-0" id="project" placeholder="Project">
-                                                            <label for="project">Your Project</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
-                                                            <label for="subject">Subject</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 120px"></textarea>
-                                                            <label for="message">Message</label>
-                                                        </div>
-                
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button class="btn btn-primary w-100 py-3">Send Message</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div> -->
-                                    <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="rounded">
-                                            <iframe class="rounded w-100" style="height: 400px;" 
-                                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d347507.8954959328!2d-82.745203!3d27.950575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c5555cf12e2d%3A0x6c4ee26db68c4a8a!2sTampa%2C%20FL%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
-                                             loading="lazy" 
-                                            referrerpolicy="no-referrer-when-downgrade">
-                                            </iframe>
+                                            <h4>GitHub</h4>
+                                            <p class="mb-0"><a href="https://github.com/siddarthagreddy" target="_blank"
+                                                    rel="noreferrer"
+                                                    class="contact-link">github.com/siddarthagreddy</a></p>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="rounded">
+                                        <iframe class="rounded w-100" style="height: 400px;"
+                                            src="https://www.google.com/maps?q=Richardson,TX&amp;output=embed"
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                            title="Richardson Texas map"></iframe>
+                                    </div>
+                                </div>
                             </div>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
+    </div>
 
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer bg-dark border-bottom-0">
-            <div class="container wow fadeIn" data-wow-delay="0.1s">
-                <div class="row g-0">
-                    <div class="col-12">
-                       <div class="footer-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 text-center">
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-light btn-md-square me-3" href="https://www.facebook.com/siddarthagreddy/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-light btn-md-square me-0" href="https://www.linkedin.com/in/siddarthagreddy/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-body me-2"></i>Siddartha Portfolio</a>, All right reserved.</span>
-                                </div>
-                                <div class="col-12 text-center text-body">
-                                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                                    Designed By <a class="border-bottom text-white" href="">Siddartha R Gundluru</a>
+    <div class="container-fluid footer bg-dark border-bottom-0">
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="footer-content h-100 pt-6 ps-6 pb-6">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 text-center">
+                                <div class="d-flex justify-content-center">
+                                    <a class="btn btn-light btn-md-square me-3"
+                                        href="https://www.linkedin.com/in/siddarthagreddy/" target="_blank"
+                                        rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-light btn-md-square me-3"
+                                        href="https://github.com/siddarthagreddy" target="_blank"
+                                        rel="noreferrer"><i class="fab fa-github"></i></a>
+                                    <a class="btn btn-light btn-md-square" href="mailto:siddarthagreddy@gmail.com"><i
+                                            class="fas fa-envelope"></i></a>
                                 </div>
                             </div>
-                       </div>        
+                            <div class="col-12 text-center">
+                                <span class="text-body"><a href="#pigraHome" class="border-bottom text-white"><i
+                                            class="fas fa-copyright text-body me-2"></i>Siddartha Portfolio</a>, All
+                                    rights reserved.</span>
+                            </div>
+                            <div class="col-12 text-center text-body">
+                                Designed by <span class="border-bottom text-white">Siddartha R Gundluru</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
 
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
-
-</html> -->
+</html>
